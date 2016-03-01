@@ -8,7 +8,7 @@
 
 
 ## App Image
-![Alt Text](https://github.com/MMasahito/BlurDialogView/blob/master/dev.gif)  
+![Alt Text](https://github.com/Objective-C-MMizogaki/BlurDialogView/blob/master/dev.gif)  
 
 
 ## With CocoaPods
