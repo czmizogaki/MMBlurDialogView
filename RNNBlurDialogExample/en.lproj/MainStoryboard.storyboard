@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="E6h-dN-tw1"/>
+                        <viewControllerLayoutGuide type="bottom" id="cXh-Uz-gm6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qar-X9-YRr">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="sample.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="SqU-bk-f1K">
+                                        <rect key="frame" x="96" y="61" width="128" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="OoL-wY-N20"/>
+                                            <constraint firstAttribute="width" constant="128" id="VcR-Rw-FQd"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="https://github.com/MMasahito/BlurDialogView" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="SEL-qa-R4v">
+                                        <rect key="frame" x="20" y="210" width="300" height="149"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="149" id="dEU-pR-EcK"/>
+                                            <constraint firstAttribute="width" constant="300" id="giw-Pl-hbA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sGo-K1-C4B">
+                                        <rect key="frame" x="60" y="359" width="199" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="199" id="dvV-1k-Q7M"/>
+                                            <constraint firstAttribute="height" constant="46" id="vGC-AK-PLr"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Demo">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onDemoButton:" destination="2" eventType="touchUpInside" id="H1v-qc-IMR"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="SEL-qa-R4v" firstAttribute="leading" secondItem="Qar-X9-YRr" secondAttribute="leading" constant="20" symbolic="YES" id="DlJ-Ve-Re6"/>
+                                    <constraint firstItem="SEL-qa-R4v" firstAttribute="top" secondItem="Qar-X9-YRr" secondAttribute="top" constant="210" id="DvA-Yb-dtc"/>
+                                    <constraint firstItem="SqU-bk-f1K" firstAttribute="centerX" secondItem="sGo-K1-C4B" secondAttribute="centerX" id="FyX-VU-0b7"/>
+                                    <constraint firstItem="SqU-bk-f1K" firstAttribute="centerX" secondItem="Qar-X9-YRr" secondAttribute="centerX" id="SY2-vN-mYu"/>
+                                    <constraint firstItem="SEL-qa-R4v" firstAttribute="top" secondItem="SqU-bk-f1K" secondAttribute="bottom" constant="21" id="TLg-kp-xzD"/>
+                                    <constraint firstAttribute="bottom" secondItem="sGo-K1-C4B" secondAttribute="bottom" constant="143" id="fVw-pt-IBb"/>
+                                    <constraint firstItem="SEL-qa-R4v" firstAttribute="trailing" secondItem="Qar-X9-YRr" secondAttribute="trailing" id="osL-nr-zgr"/>
+                                    <constraint firstItem="sGo-K1-C4B" firstAttribute="top" secondItem="Qar-X9-YRr" secondAttribute="top" constant="359" id="xJ4-FO-QAT"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Qar-X9-YRr" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" id="1oG-cj-fKv"/>
+                            <constraint firstItem="Qar-X9-YRr" firstAttribute="leading" secondItem="3" secondAttribute="leading" id="BoA-jV-8SF"/>
+                            <constraint firstItem="Qar-X9-YRr" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" id="mhO-Mu-LPu"/>
+                            <constraint firstItem="Qar-X9-YRr" firstAttribute="top" secondItem="3" secondAttribute="top" id="mqE-Cb-qeI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="SqU-bk-f1K" id="x9a-o3-LhJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sample.jpeg" width="460" height="460"/>
+    </resources>
+</document>
