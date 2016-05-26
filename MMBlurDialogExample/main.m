@@ -1,5 +1,5 @@
 /*
- * BlurDialogView
+ * MMBlurDialogView
  *
  * Created by MMizogaki on 10/2/15.
  * Copyright (c) 2015 MMizogaki . All rights reserved.
@@ -25,8 +25,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+#import "AppDelegate.h"
 
-@property (strong, nonatomic) UIWindow *window;
-
-@end
+int main(int argc, char *argv[])
+{
+    @autoreleasepool {
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
+    }
+}

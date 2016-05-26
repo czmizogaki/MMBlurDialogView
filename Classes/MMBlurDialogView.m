@@ -1,5 +1,5 @@
 /*
- * BlurDialogView
+ * MMBlurDialogView
  *
  * Created by MMizogaki on 10/2/15.
  * Copyright (c) 2015 MMizogaki . All rights reserved.
@@ -23,7 +23,7 @@
  * SOFTWARE.
  */
 
-#import "BlurDialogView.h"
+#import "MMBlurDialogView.h"
 #import <Accelerate/Accelerate.h>
 #import <QuartzCore/QuartzCore.h>
 
@@ -36,7 +36,7 @@ CGFloat const kBlurBounceOutDurationScale = 0.8f;
 NSString * const kBlurDidShowNotification  = @"github.com/MMasahito.BlurModalView.show";
 NSString * const kBlurDidHidewNotification = @"github.com/MMasahito.BlurModalView.hide";
 
-typedef void (^RNNBlurCompletion)(void);
+typedef void (^MMBlurCompletion)(void);
 
 
 @interface UIView (Sizes)
@@ -58,40 +58,39 @@ typedef void (^RNNBlurCompletion)(void);
 -(UIImage *)boxblurImageWithBlur:(CGFloat)blur;
 @end
 
-@interface RNNBlurView : UIImageView
+@interface MMBlurView : UIImageView
 - (id)initWithCoverView:(UIView*)view;
 @end
 
-@interface RNNCloseButton : UIButton
+@interface MMCloseButton : UIButton
 @end
 
-@interface BlurDialogView ()
+@interface MMBlurDialogView ()
 @property (assign, readwrite) BOOL isVisible;
 @end
 
-#pragma mark - RNNBlurModalView
+#pragma mark - MMBlurModalView
 
-@implementation BlurDialogView {
+@implementation MMBlurDialogView {
     UIViewController *_controller;
     UIView *_parentView;
     UIView *_contentView;
-    RNNCloseButton *_dismissButton;
-    RNNBlurView *_blurView;
-    RNNBlurCompletion _completion;
+    MMCloseButton *_dismissButton;
+    MMBlurView *_blurView;
+    MMBlurCompletion _completion;
 }
 
 
 - (id)initWithFrame:(CGRect)frame {
+    
     if (self = [super initWithFrame:frame]) {
         
-        
-        _dismissButton = [[RNNCloseButton alloc] init];
+        _dismissButton = [[MMCloseButton alloc] init];
         _dismissButton.center = CGPointZero;
         [_dismissButton addTarget:self action:@selector(hide) forControlEvents:UIControlEventTouchUpInside];
         
         [self.duringDraftSaveButton addTarget:self action:@selector(duringDraftSaveButtonTapped:)forControlEvents:UIControlEventTouchUpInside];
         [self.duringConsiderationButton addTarget:self action:@selector(duringConsiderationButtonTapped:)forControlEvents:UIControlEventTouchUpInside];
-        
         
         self.alpha = 0.f;
         self.backgroundColor = [UIColor clearColor];
@@ -109,6 +108,7 @@ typedef void (^RNNBlurCompletion)(void);
 
 
 - (id)initWithViewController:(UIViewController*)viewController view:(UIView*)view {
+    
     if (self = [self initWithFrame:(CGRect){CGPointZero, viewController.view.width, viewController.view.height}]) {
         [self addSubview:view];
         _contentView = view;
@@ -125,7 +125,9 @@ typedef void (^RNNBlurCompletion)(void);
 }
 
 - (id)initWithParentView:(UIView*)parentView view:(UIView*)view {
+    
     if (self = [self initWithFrame:(CGRect){CGPointZero, parentView.width, parentView.height}]) {
+        
         [self addSubview:view];
         _contentView = view;
         _contentView.center = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame));
@@ -290,13 +292,13 @@ typedef void (^RNNBlurCompletion)(void);
     // get new screenshot after orientation
     [_blurView removeFromSuperview]; _blurView = nil;
     if (_controller) {
-        _blurView = [[RNNBlurView alloc] initWithCoverView:_controller.view];
+        _blurView = [[MMBlurView alloc] initWithCoverView:_controller.view];
         _blurView.alpha = 1.f;
         [_controller.view insertSubview:_blurView belowSubview:self];
         
     }
     else if(_parentView) {
-        _blurView = [[RNNBlurView alloc] initWithCoverView:_parentView];
+        _blurView = [[MMBlurView alloc] initWithCoverView:_parentView];
         _blurView.alpha = 1.f;
         [_parentView insertSubview:_blurView belowSubview:self];
         
@@ -345,14 +347,14 @@ typedef void (^RNNBlurCompletion)(void);
         }
         
         if (_controller) {
-            _blurView = [[RNNBlurView alloc] initWithCoverView:_controller.view];
+            _blurView = [[MMBlurView alloc] initWithCoverView:_controller.view];
             _blurView.alpha = 0.f;
             self.frame = (CGRect){CGPointZero, _controller.view.bounds.size.width, _controller.view.bounds.size.height};
             
             [_controller.view insertSubview:_blurView belowSubview:self];
         }
         else if(_parentView) {
-            _blurView = [[RNNBlurView alloc] initWithCoverView:_parentView];
+            _blurView = [[MMBlurView alloc] initWithCoverView:_parentView];
             _blurView.alpha = 0.f;
             self.frame = (CGRect){CGPointZero, _parentView.bounds.size.width, _parentView.bounds.size.height};
             
@@ -426,9 +428,9 @@ typedef void (^RNNBlurCompletion)(void);
 
 @end
 
-#pragma mark - RNNBlurView
+#pragma mark - MMBlurView
 
-@implementation RNNBlurView {
+@implementation MMBlurView {
     UIView *_coverView;
 }
 
@@ -532,9 +534,9 @@ typedef void (^RNNBlurCompletion)(void);
 
 @end
 
-#pragma mark - RNNCloseButton
+#pragma mark - MMCloseButton
 
-@implementation RNNCloseButton
+@implementation MMCloseButton
 
 - (id)init{
     if(!(self = [super initWithFrame:(CGRect){0, 0, 42, 42}])){

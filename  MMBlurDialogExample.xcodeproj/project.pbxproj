@@ -13,48 +13,48 @@
 		866E0B6A162F323300DE51B9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 866E0B69162F323300DE51B9 /* QuartzCore.framework */; };
 		866E0B75162F44D400DE51B9 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 866E0B74162F44D400DE51B9 /* Accelerate.framework */; };
 		86A650D9163080D5001DD552 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86A650D8163080D5001DD552 /* CoreImage.framework */; };
-		9C0FD31C1BFF3A8900CB128D /* homeAlertArow.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0FD31A1BFF3A8900CB128D /* homeAlertArow.png */; };
-		9C0FD31D1BFF3A8900CB128D /* homeAlertArow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0FD31B1BFF3A8900CB128D /* homeAlertArow@2x.png */; };
-		9C647D141BFC26BD001A5FAC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C647D031BFC26BD001A5FAC /* Default-568h@2x.png */; };
-		9C647D151BFC26BD001A5FAC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C647D041BFC26BD001A5FAC /* Default.png */; };
-		9C647D161BFC26BD001A5FAC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C647D051BFC26BD001A5FAC /* Default@2x.png */; };
 		9C647D171BFC26BD001A5FAC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9C647D061BFC26BD001A5FAC /* InfoPlist.strings */; };
 		9C647D181BFC26BD001A5FAC /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C647D081BFC26BD001A5FAC /* MainStoryboard.storyboard */; };
 		9C647D191BFC26BD001A5FAC /* MainStoryboard_ipad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C647D0A1BFC26BD001A5FAC /* MainStoryboard_ipad.storyboard */; };
-		9C647D1A1BFC26BD001A5FAC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C647D0C1BFC26BD001A5FAC /* main.m */; };
-		9C647D1B1BFC26BD001A5FAC /* BlurDialogExample-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C647D0D1BFC26BD001A5FAC /* BlurDialogExample-Info.plist */; };
-		9C647D1C1BFC26BD001A5FAC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C647D0F1BFC26BD001A5FAC /* AppDelegate.m */; };
-		9C647D1D1BFC26BD001A5FAC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C647D121BFC26BD001A5FAC /* ViewController.m */; };
-		9C647D1E1BFC26BD001A5FAC /* sample.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9C647D131BFC26BD001A5FAC /* sample.jpeg */; };
-		9CE9CB6D1BFCC98900A63B1D /* BlurDialogView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE9CB6C1BFCC98900A63B1D /* BlurDialogView.m */; };
+		9CE9CB6D1BFCC98900A63B1D /* MMBlurDialogView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE9CB6C1BFCC98900A63B1D /* MMBlurDialogView.m */; };
+		D9AF48501CF6920000245DB2 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9AF484A1CF6920000245DB2 /* Default-568h@2x.png */; };
+		D9AF48511CF6920000245DB2 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D9AF484B1CF6920000245DB2 /* Default.png */; };
+		D9AF48521CF6920000245DB2 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9AF484C1CF6920000245DB2 /* Default@2x.png */; };
+		D9AF48531CF6920000245DB2 /* homeAlertArow.png in Resources */ = {isa = PBXBuildFile; fileRef = D9AF484D1CF6920000245DB2 /* homeAlertArow.png */; };
+		D9AF48541CF6920000245DB2 /* homeAlertArow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9AF484E1CF6920000245DB2 /* homeAlertArow@2x.png */; };
+		D9AF48551CF6920000245DB2 /* sample.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D9AF484F1CF6920000245DB2 /* sample.jpeg */; };
+		D9AF48581CF6923B00245DB2 /* MM MMBlurDialogExample-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D9AF48561CF6923B00245DB2 /* MM MMBlurDialogExample-Info.plist */; };
+		D9AF485B1CF6924500245DB2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D9AF485A1CF6924500245DB2 /* AppDelegate.m */; };
+		D9AF485E1CF6925B00245DB2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9AF485D1CF6925B00245DB2 /* ViewController.m */; };
+		D9AF48601CF6926300245DB2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D9AF485F1CF6926300245DB2 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		866E0B3B162F2F2D00DE51B9 /* BlurDialogExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlurDialogExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		866E0B3B162F2F2D00DE51B9 /*  MMBlurDialogExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = " MMBlurDialogExample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		866E0B3F162F2F2D00DE51B9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		866E0B41162F2F2D00DE51B9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		866E0B43162F2F2D00DE51B9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		866E0B69162F323300DE51B9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		866E0B74162F44D400DE51B9 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		86A650D8163080D5001DD552 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
-		9C0FD31A1BFF3A8900CB128D /* homeAlertArow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = homeAlertArow.png; sourceTree = "<group>"; };
-		9C0FD31B1BFF3A8900CB128D /* homeAlertArow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "homeAlertArow@2x.png"; sourceTree = "<group>"; };
-		9C647D031BFC26BD001A5FAC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		9C647D041BFC26BD001A5FAC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		9C647D051BFC26BD001A5FAC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		9C647D071BFC26BD001A5FAC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9C647D091BFC26BD001A5FAC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		9C647D0B1BFC26BD001A5FAC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_ipad.storyboard; sourceTree = "<group>"; };
-		9C647D0C1BFC26BD001A5FAC /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9C647D0D1BFC26BD001A5FAC /* BlurDialogExample-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "BlurDialogExample-Info.plist"; sourceTree = "<group>"; };
-		9C647D0E1BFC26BD001A5FAC /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		9C647D0F1BFC26BD001A5FAC /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9C647D101BFC26BD001A5FAC /* BlurDialogExample-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BlurDialogExample-Prefix.pch"; sourceTree = "<group>"; };
-		9C647D111BFC26BD001A5FAC /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9C647D121BFC26BD001A5FAC /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		9C647D131BFC26BD001A5FAC /* sample.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sample.jpeg; sourceTree = "<group>"; };
-		9CE9CB6B1BFCC98900A63B1D /* BlurDialogView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlurDialogView.h; sourceTree = "<group>"; };
-		9CE9CB6C1BFCC98900A63B1D /* BlurDialogView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlurDialogView.m; sourceTree = "<group>"; };
+		9CE9CB6B1BFCC98900A63B1D /* MMBlurDialogView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMBlurDialogView.h; sourceTree = "<group>"; };
+		9CE9CB6C1BFCC98900A63B1D /* MMBlurDialogView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMBlurDialogView.m; sourceTree = "<group>"; };
+		D9AF484A1CF6920000245DB2 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "MMBlurDialogExample/Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
+		D9AF484B1CF6920000245DB2 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = MMBlurDialogExample/Default.png; sourceTree = SOURCE_ROOT; };
+		D9AF484C1CF6920000245DB2 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "MMBlurDialogExample/Default@2x.png"; sourceTree = SOURCE_ROOT; };
+		D9AF484D1CF6920000245DB2 /* homeAlertArow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = homeAlertArow.png; path = MMBlurDialogExample/homeAlertArow.png; sourceTree = SOURCE_ROOT; };
+		D9AF484E1CF6920000245DB2 /* homeAlertArow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "homeAlertArow@2x.png"; path = "MMBlurDialogExample/homeAlertArow@2x.png"; sourceTree = SOURCE_ROOT; };
+		D9AF484F1CF6920000245DB2 /* sample.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = sample.jpeg; path = MMBlurDialogExample/sample.jpeg; sourceTree = SOURCE_ROOT; };
+		D9AF48561CF6923B00245DB2 /* MM MMBlurDialogExample-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "MM MMBlurDialogExample-Info.plist"; path = "MMBlurDialogExample/MM MMBlurDialogExample-Info.plist"; sourceTree = SOURCE_ROOT; };
+		D9AF48571CF6923B00245DB2 /* MMBlurDialogExample-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MMBlurDialogExample-Prefix.pch"; path = "MMBlurDialogExample/MMBlurDialogExample-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		D9AF48591CF6924500245DB2 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = MMBlurDialogExample/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		D9AF485A1CF6924500245DB2 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = MMBlurDialogExample/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		D9AF485C1CF6925B00245DB2 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = MMBlurDialogExample/ViewController.h; sourceTree = SOURCE_ROOT; };
+		D9AF485D1CF6925B00245DB2 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = MMBlurDialogExample/ViewController.m; sourceTree = SOURCE_ROOT; };
+		D9AF485F1CF6926300245DB2 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = MMBlurDialogExample/main.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				9CE9CB6A1BFCC98900A63B1D /* Classes */,
-				9C647D021BFC26BD001A5FAC /* RNNBlurDialogExample */,
+				9C647D021BFC26BD001A5FAC /* MMBlurDialogExample */,
 				866E0B3E162F2F2D00DE51B9 /* Frameworks */,
 				866E0B3C162F2F2D00DE51B9 /* Products */,
 			);
@@ -87,7 +87,7 @@
 		866E0B3C162F2F2D00DE51B9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				866E0B3B162F2F2D00DE51B9 /* BlurDialogExample.app */,
+				866E0B3B162F2F2D00DE51B9 /*  MMBlurDialogExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,34 +105,35 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		9C647D021BFC26BD001A5FAC /* RNNBlurDialogExample */ = {
+		9C647D021BFC26BD001A5FAC /* MMBlurDialogExample */ = {
 			isa = PBXGroup;
 			children = (
-				9C0FD31A1BFF3A8900CB128D /* homeAlertArow.png */,
-				9C0FD31B1BFF3A8900CB128D /* homeAlertArow@2x.png */,
-				9C647D031BFC26BD001A5FAC /* Default-568h@2x.png */,
-				9C647D041BFC26BD001A5FAC /* Default.png */,
-				9C647D051BFC26BD001A5FAC /* Default@2x.png */,
+				D9AF484A1CF6920000245DB2 /* Default-568h@2x.png */,
+				D9AF484B1CF6920000245DB2 /* Default.png */,
+				D9AF484C1CF6920000245DB2 /* Default@2x.png */,
+				D9AF484D1CF6920000245DB2 /* homeAlertArow.png */,
+				D9AF484E1CF6920000245DB2 /* homeAlertArow@2x.png */,
+				D9AF484F1CF6920000245DB2 /* sample.jpeg */,
 				9C647D061BFC26BD001A5FAC /* InfoPlist.strings */,
 				9C647D081BFC26BD001A5FAC /* MainStoryboard.storyboard */,
 				9C647D0A1BFC26BD001A5FAC /* MainStoryboard_ipad.storyboard */,
-				9C647D0C1BFC26BD001A5FAC /* main.m */,
-				9C647D0D1BFC26BD001A5FAC /* BlurDialogExample-Info.plist */,
-				9C647D0E1BFC26BD001A5FAC /* AppDelegate.h */,
-				9C647D0F1BFC26BD001A5FAC /* AppDelegate.m */,
-				9C647D101BFC26BD001A5FAC /* BlurDialogExample-Prefix.pch */,
-				9C647D111BFC26BD001A5FAC /* ViewController.h */,
-				9C647D121BFC26BD001A5FAC /* ViewController.m */,
-				9C647D131BFC26BD001A5FAC /* sample.jpeg */,
+				D9AF48561CF6923B00245DB2 /* MM MMBlurDialogExample-Info.plist */,
+				D9AF48571CF6923B00245DB2 /* MMBlurDialogExample-Prefix.pch */,
+				D9AF48591CF6924500245DB2 /* AppDelegate.h */,
+				D9AF485A1CF6924500245DB2 /* AppDelegate.m */,
+				D9AF485C1CF6925B00245DB2 /* ViewController.h */,
+				D9AF485D1CF6925B00245DB2 /* ViewController.m */,
+				D9AF485F1CF6926300245DB2 /* main.m */,
 			);
+			name = MMBlurDialogExample;
 			path = RNNBlurDialogExample;
 			sourceTree = "<group>";
 		};
 		9CE9CB6A1BFCC98900A63B1D /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				9CE9CB6B1BFCC98900A63B1D /* BlurDialogView.h */,
-				9CE9CB6C1BFCC98900A63B1D /* BlurDialogView.m */,
+				9CE9CB6B1BFCC98900A63B1D /* MMBlurDialogView.h */,
+				9CE9CB6C1BFCC98900A63B1D /* MMBlurDialogView.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -154,7 +155,7 @@
 			);
 			name = BlurModalExample;
 			productName = RNBlurModalExample;
-			productReference = 866E0B3B162F2F2D00DE51B9 /* BlurDialogExample.app */;
+			productReference = 866E0B3B162F2F2D00DE51B9 /*  MMBlurDialogExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -170,7 +171,7 @@
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = MMizogaki;
 			};
-			buildConfigurationList = 866E0B35162F2F2D00DE51B9 /* Build configuration list for PBXProject "BlurDialogExample" */;
+			buildConfigurationList = 866E0B35162F2F2D00DE51B9 /* Build configuration list for PBXProject " MMBlurDialogExample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -192,15 +193,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C0FD31C1BFF3A8900CB128D /* homeAlertArow.png in Resources */,
+				D9AF48551CF6920000245DB2 /* sample.jpeg in Resources */,
+				D9AF48501CF6920000245DB2 /* Default-568h@2x.png in Resources */,
+				D9AF48581CF6923B00245DB2 /* MM MMBlurDialogExample-Info.plist in Resources */,
 				9C647D181BFC26BD001A5FAC /* MainStoryboard.storyboard in Resources */,
-				9C0FD31D1BFF3A8900CB128D /* homeAlertArow@2x.png in Resources */,
-				9C647D161BFC26BD001A5FAC /* Default@2x.png in Resources */,
-				9C647D1E1BFC26BD001A5FAC /* sample.jpeg in Resources */,
+				D9AF48531CF6920000245DB2 /* homeAlertArow.png in Resources */,
+				D9AF48521CF6920000245DB2 /* Default@2x.png in Resources */,
 				9C647D191BFC26BD001A5FAC /* MainStoryboard_ipad.storyboard in Resources */,
-				9C647D151BFC26BD001A5FAC /* Default.png in Resources */,
-				9C647D141BFC26BD001A5FAC /* Default-568h@2x.png in Resources */,
-				9C647D1B1BFC26BD001A5FAC /* BlurDialogExample-Info.plist in Resources */,
+				D9AF48541CF6920000245DB2 /* homeAlertArow@2x.png in Resources */,
+				D9AF48511CF6920000245DB2 /* Default.png in Resources */,
 				9C647D171BFC26BD001A5FAC /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,10 +213,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CE9CB6D1BFCC98900A63B1D /* BlurDialogView.m in Sources */,
-				9C647D1C1BFC26BD001A5FAC /* AppDelegate.m in Sources */,
-				9C647D1A1BFC26BD001A5FAC /* main.m in Sources */,
-				9C647D1D1BFC26BD001A5FAC /* ViewController.m in Sources */,
+				9CE9CB6D1BFCC98900A63B1D /* MMBlurDialogView.m in Sources */,
+				D9AF485B1CF6924500245DB2 /* AppDelegate.m in Sources */,
+				D9AF48601CF6926300245DB2 /* main.m in Sources */,
+				D9AF485E1CF6925B00245DB2 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,10 +306,10 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
-				INFOPLIST_FILE = "$(SRCROOT)/RNNBlurDialogExample/BlurDialogExample-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/MMBlurDialogExample/MMBlurDialogExample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_BUNDLE_IDENTIFIER = MMizogaki.BlurDialogExample;
-				PRODUCT_NAME = BlurDialogExample;
+				PRODUCT_BUNDLE_IDENTIFIER = MMizogaki.MMBlurDialogExample;
+				PRODUCT_NAME = " MMBlurDialogExample";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -319,10 +320,10 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
-				INFOPLIST_FILE = "$(SRCROOT)/RNNBlurDialogExample/BlurDialogExample-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/MMBlurDialogExample/MMBlurDialogExample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_BUNDLE_IDENTIFIER = MMizogaki.BlurDialogExample;
-				PRODUCT_NAME = BlurDialogExample;
+				PRODUCT_BUNDLE_IDENTIFIER = MMizogaki.MMBlurDialogExample;
+				PRODUCT_NAME = " MMBlurDialogExample";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -331,7 +332,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		866E0B35162F2F2D00DE51B9 /* Build configuration list for PBXProject "BlurDialogExample" */ = {
+		866E0B35162F2F2D00DE51B9 /* Build configuration list for PBXProject " MMBlurDialogExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				866E0B5D162F2F2D00DE51B9 /* Debug */,

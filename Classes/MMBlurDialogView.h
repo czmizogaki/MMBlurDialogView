@@ -1,5 +1,5 @@
 /*
- * BlurDialogView
+ * MMBlurDialogView
  *
  * Created by MMizogaki on 10/2/15.
  * Copyright (c) 2015 MMizogaki . All rights reserved.
@@ -29,7 +29,7 @@
 extern NSString * const kBlurDidShowNotification;
 extern NSString * const kBlurDidHidewNotification;
 
-@interface BlurDialogView : UIView
+@interface MMBlurDialogView : UIView
 
 @property (assign, readonly) BOOL isVisible;
 

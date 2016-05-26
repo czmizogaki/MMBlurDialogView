@@ -1,5 +1,5 @@
 /*
- * BlurDialogView
+ * MMBlurDialogView
  *
  * Created by MMizogaki on 10/2/15.
  * Copyright (c) 2015 MMizogaki . All rights reserved.
@@ -24,7 +24,7 @@
  */
 
 #import "ViewController.h"
-#import "BlurDialogView.h"
+#import "MMBlurDialogView.h"
 #import <QuartzCore/QuartzCore.h>
 
 @interface ViewController ()
@@ -48,31 +48,30 @@
 
 - (IBAction)onDemoButton:(id)sender {
     
-    BlurDialogView *modal;
+    MMBlurDialogView *dialogView;
     
-    modal = [[BlurDialogView alloc] initWithView:@"Test"
-                                    topButtonTitle:@"Top\nTop"
-                                    downButtonTile:@"Down\nDown"
-                                         backColor:[UIColor whiteColor]
-                                         LineColor:[UIColor colorWithRed:0.7896 green:0.7896 blue:0.7896 alpha:1.0]];
+    dialogView = [[MMBlurDialogView alloc] initWithView:@"Test"
+                                         topButtonTitle:@"Top\nTop"
+                                         downButtonTile:@"Down\nDown"
+                                              backColor:[UIColor whiteColor]
+                                              LineColor:[UIColor colorWithRed:0.7896 green:0.7896 blue:0.7896 alpha:1.0]];
     
-    [modal.duringDraftSaveButton setBackgroundImage:[UIImage imageNamed:@"homeAlertArow"] forState:UIControlStateNormal];
-    [modal.duringConsiderationButton setBackgroundImage:[UIImage imageNamed:@"homeAlertArow"] forState:UIControlStateNormal];
+    [dialogView.duringDraftSaveButton setBackgroundImage:[UIImage imageNamed:@"homeAlertArow"] forState:UIControlStateNormal];
+    [dialogView.duringConsiderationButton setBackgroundImage:[UIImage imageNamed:@"homeAlertArow"] forState:UIControlStateNormal];
     
-    modal.dismissButtonRight = YES;
+    dialogView.dismissButtonRight = YES;
     
-    modal.defaultHideBlock = ^{
+    dialogView.defaultHideBlock = ^{
         NSLog(@"Code called after the modal view is hidden");
     };
-    modal.topButtonTappedBlock = ^{
+    dialogView.topButtonTappedBlock = ^{
         NSLog(@"CallBack:TopButtn");
     };
-    modal.downButtonTappedBlock = ^{
+    dialogView.downButtonTappedBlock = ^{
         NSLog(@"CallBack:DownButtn");
     };
     
-    
-    [modal show];
+    [dialogView show];
 }
 
 
