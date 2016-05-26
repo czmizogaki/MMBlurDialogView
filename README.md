@@ -14,7 +14,7 @@
 ## With CocoaPods
 Just add this line to your podfile.
 ```
-pod 'MMBlurDialogView', '1.0.0'
+pod 'MMBlurDialogView', '1.1.2'
 ```
 
 ## Manual installation
@@ -30,25 +30,29 @@ Additionally in your project, under the Build Phases tab, expand Compile Sources
 The simplest way to get up and running with MMBlurDialogView is to display a default view. Inside of your view controller, write the following code:
 
 ``` objective-c
-    BlurDialogView *modal;
-    modal = [[BlurDialogView alloc] initWithView:@"Test"
-                                    topButtonTitle:@"Top\nTop"
-                                    downButtonTile:@"Down\nDown"
-                                         backColor:[UIColor whiteColor]
-                                         LineColor:[UIColor colorWithRed:0.7896 green:0.7896 blue:0.7896 alpha:1.0]];
-    modal.dismissButtonRight = YES;
-    modal.defaultHideBlock = ^{
+MMBlurDialogView *dialogView;
+    dialogView = [[MMBlurDialogView alloc] initWithView:@"Test"
+                                         topButtonTitle:@"Top\nTop"
+                                         downButtonTile:@"Down\nDown"
+                                              backColor:[UIColor whiteColor]
+                                              LineColor:[UIColor colorWithRed:0.7896 green:0.7896 blue:0.7896 alpha:1.0]];
+    
+    [dialogView.duringDraftSaveButton setBackgroundImage:[UIImage imageNamed:@"homeAlertArow"] forState:UIControlStateNormal];
+    [dialogView.duringConsiderationButton setBackgroundImage:[UIImage imageNamed:@"homeAlertArow"] forState:UIControlStateNormal];
+    
+    dialogView.dismissButtonRight = YES;
+    
+    dialogView.defaultHideBlock = ^{
         NSLog(@"Code called after the modal view is hidden");
     };
-    modal.topButtonTappedBlock = ^{
-        NSLog(@"Top");
+    dialogView.topButtonTappedBlock = ^{
+        NSLog(@"CallBack:TopButtn");
     };
-    modal.downButtonTappedBlock = ^{
-        NSLog(@"Down");
+    dialogView.downButtonTappedBlock = ^{
+        NSLog(@"CallBack:DownButtn");
     };
     
-    
-    [modal show];
+    [dialogView show];
 ```
 
 ## Memo
