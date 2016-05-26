@@ -1,8 +1,11 @@
 # MMBlurDialogView
 [![Platform](http://img.shields.io/badge/platform-ios-blue.svg?style=flat
-              )](https://developer.apple.com/iphone/index.action)
+)](https://developer.apple.com/iphone/index.action)
 [![Language](http://img.shields.io/badge/language-Objective–C-brightgreen.svg?style=flat
-             )](https://developer.apple.com/jp/documentation/)
+)](https://developer.apple.com/jp/documentation/)
+[![Swift 2.2](https://img.shields.io/badge/Swift-2.2-orange.svg?style=flat)](https://developer.apple.com/swift/)
+[![Swift 3.0](https://img.shields.io/badge/Swift-3.0-orange.svg?style=flat)](https://developer.apple.com/swift/)
+[![CocoaPods Compatible](https://img.shields.io/cocoapods/v/MMBlurDialogView.svg)](https://img.shields.io/cocoapods/v/MMBlurDialogView.svg)
 [![License](http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat
             )](http://mit-license.org)
 
