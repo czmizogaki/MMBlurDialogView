@@ -8,7 +8,7 @@
 
 
 ## App Image
-![Alt Text](https://github.com/Objective-C-MMizogaki/MMBlurDialogView/blob/master/dev.gif)  
+![Alt Text](https://github.com/Objective-C-MMizogaki/MMBlurDialogView/blob/master/Resouce/dev.gif)  
 
 
 ## With CocoaPods
