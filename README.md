@@ -1,4 +1,4 @@
-# BlurDialogView
+# MMBlurDialogView
 [![Platform](http://img.shields.io/badge/platform-ios-blue.svg?style=flat
               )](https://developer.apple.com/iphone/index.action)
 [![Language](http://img.shields.io/badge/language-Objective–C-brightgreen.svg?style=flat
@@ -8,13 +8,13 @@
 
 
 ## App Image
-![Alt Text](https://github.com/Objective-C-MMizogaki/BlurDialogView/blob/master/dev.gif)  
+![Alt Text](https://github.com/Objective-C-MMizogaki/MMBlurDialogView/blob/master/dev.gif)  
 
 
 ## With CocoaPods
 Just add this line to your podfile.
 ```
-pod 'BlurDialogView', '1.0.0'
+pod 'MMBlurDialogView', '1.0.0'
 ```
 
 ## Manual installation
@@ -23,11 +23,11 @@ Super simple. Just drag & drop BlurDialogView.h/.m into your project.
 
 QuartzCore.framework
 Accelerate.framework
-Additionally in your project, under the Build Phases tab, expand Compile Sources and add BlurDialogView.m.
+Additionally in your project, under the Build Phases tab, expand Compile Sources and add MMBlurDialogView.m.
 
 
 ## Usage
-The simplest way to get up and running with BlurDialogView is to display a default view. Inside of your view controller, write the following code:
+The simplest way to get up and running with MMBlurDialogView is to display a default view. Inside of your view controller, write the following code:
 
 ``` objective-c
     BlurDialogView *modal;
