@@ -26,38 +26,54 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 
-extern NSString * const kBlurDidShowNotification;
-extern NSString * const kBlurDidHidewNotification;
+extern NSString *_Nonnull const kBlurDidShowNotification;
+extern NSString *_Nonnull const kBlurDidHidewNotification;
 
 @interface MMBlurDialogView : UIView
 
-@property (assign, readonly) BOOL isVisible;
+@property(assign, readonly) BOOL isVisible;
 
-@property (nonatomic, strong) UIButton *duringDraftSaveButton;
-@property (nonatomic, strong) UIButton *duringConsiderationButton;
+@property(nonatomic, strong) UIButton *_Nonnull duringDraftSaveButton;
+@property(nonatomic, strong) UIButton *_Nonnull duringConsiderationButton;
 
-@property (assign) CGFloat animationDuration;
-@property (assign) CGFloat animationDelay;
-@property (assign) UIViewAnimationOptions animationOptions;
-@property (assign) BOOL dismissButtonRight;
-@property (nonatomic, copy) void (^defaultHideBlock)(void);
+@property(nonatomic, assign) CGFloat animationDuration;
+@property(nonatomic, assign) CGFloat animationDelay;
+@property(nonatomic, assign) UIViewAnimationOptions animationOptions;
+@property(nonatomic, assign) BOOL dismissButtonRight;
 
-@property (nonatomic, copy) void (^topButtonTappedBlock)(void);
-@property (nonatomic, copy) void (^downButtonTappedBlock)(void);
+@property(nonatomic, copy) void (^_Nonnull defaultHideBlock)(void);
+@property(nonatomic, copy) void (^_Nonnull topButtonTappedBlock)(void);
+@property(nonatomic, copy) void (^_Nonnull downButtonTappedBlock)(void);
 
 
-- (id)initWithViewController:(UIViewController*)viewController view:(UIView*)view;
-- (id)initWithParentView:(UIView*)parentView view:(UIView*)view;
-- (id)initWithView:(NSString*)title topButtonTitle:(NSString *)topTitle downButtonTile:(NSString*)downTitle backColor:(UIColor*)backC LineColor:(UIColor*)lineC;
+- (_Nullable id)initWithViewController:(UIViewController *_Nonnull)viewController
+                                  view:(UIView *_Nonnull)view;
+
+- (_Nullable id)initWithParentView:(UIView *_Nonnull)parentView
+                              view:(UIView *_Nonnull)view;
+
+- (_Nullable id)initWithView:(NSString* _Nullable)title
+              topButtonTitle:(NSString* _Nullable)topTitle
+              downButtonTile:(NSString* _Nullable)downTitle
+                   backColor:(UIColor* _Nullable)backC
+                   LineColor:(UIColor* _Nullable)lineC;
 
 
 - (void)show;
-- (void)showWithDuration:(CGFloat)duration delay:(NSTimeInterval)delay options:(UIViewAnimationOptions)options completion:(void (^)(void))completion;
+
+- (void)showWithDuration:(CGFloat)duration
+                   delay:(NSTimeInterval)delay
+                 options:(UIViewAnimationOptions)options
+              completion:(void (^ _Nullable)(void))completion;
 
 - (void)hide;
-- (void)hideWithDuration:(CGFloat)duration delay:(NSTimeInterval)delay options:(UIViewAnimationOptions)options completion:(void (^)(void))completion;
 
--(void)hideCloseButton:(BOOL)hide;
+- (void)hideWithDuration:(CGFloat)duration
+                   delay:(NSTimeInterval)delay
+                 options:(UIViewAnimationOptions)options
+              completion:(void (^ _Nullable)(void))completion;
+
+- (void)hideCloseButton:(BOOL)hide;
 
 
 @end
