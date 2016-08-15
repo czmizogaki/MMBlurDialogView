@@ -90,18 +90,25 @@ typedef void (^MMBlurCompletion)(void);
         _dismissButton.center = CGPointZero;
         [_dismissButton addTarget:self action:@selector(hide) forControlEvents:UIControlEventTouchUpInside];
 
-        [self.duringDraftSaveButton addTarget:self action:@selector(duringDraftSaveButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
-        [self.duringConsiderationButton addTarget:self action:@selector(duringConsiderationButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
+        [self.duringDraftSaveButton addTarget:self
+                                       action:@selector(duringDraftSaveButtonTapped:)
+                             forControlEvents:UIControlEventTouchUpInside];
+
+        [self.duringConsiderationButton addTarget:self
+                                           action:@selector(duringConsiderationButtonTapped:)
+                                 forControlEvents:UIControlEventTouchUpInside];
 
         self.alpha = 0.f;
         self.backgroundColor = [UIColor clearColor];
-
         self.autoresizingMask = (UIViewAutoresizingFlexibleWidth |
                 UIViewAutoresizingFlexibleHeight |
                 UIViewAutoresizingFlexibleLeftMargin |
                 UIViewAutoresizingFlexibleTopMargin);
 
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(orientationDidChangeNotification:) name:UIApplicationDidChangeStatusBarOrientationNotification object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(orientationDidChangeNotification:)
+                                                     name:UIApplicationDidChangeStatusBarOrientationNotification
+                                                   object:nil];
     }
     return self;
 }
